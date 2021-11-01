@@ -1,10 +1,13 @@
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
-(menu-bar-mode -1)
+(menu-bar-mode 1)
 (setq inhibit-startup-screen t)
 (setq scroll-step 1)
 
 (use-package powerline)
+
+(custom-set-variables
+ '(initial-frame-alist (quote ((fullscreen . maximized)))))
 
 (use-package moe-theme
   :config

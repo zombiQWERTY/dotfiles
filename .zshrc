@@ -1,4 +1,5 @@
 # If you come from bash you might have to change your $PATH.
+
 export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$HOME/.emacs.d/bin:$PATH
 
 # Path to your oh-my-zsh installation.
@@ -105,3 +106,13 @@ alias ..='cd ..'
 alias cd..l='cd .. && l'
 alias ssh-init='sh ~/dotfiles/ssh-add.sh'
 
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/zombiqwerty/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/zombiqwerty/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/zombiqwerty/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/zombiqwerty/google-cloud-sdk/completion.zsh.inc'; fi
+
+eval $(thefuck --alias)
+export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/opt/python@3.8/bin:$PATH"

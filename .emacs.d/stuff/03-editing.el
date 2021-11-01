@@ -10,6 +10,8 @@
 
 (delete-selection-mode +1)    ;; replace region with new content
 
+;;(global-aggressive-indent-mode 1)
+
 (defvar yank-advised-indent-threshold 1024
   "Threshold (# chars) over which indentation does not automatically occur.")
 

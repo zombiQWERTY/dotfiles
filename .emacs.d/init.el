@@ -11,7 +11,7 @@
   
   (package-initialize)
   
-  (when (memq window-system '(mac ns x))
+  (when (memq window-system '(mac os x))
     (exec-path-from-shell-initialize))
   
   (require 'use-package-ensure)
@@ -33,10 +33,11 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(display-battery-mode t)
  '(package-selected-packages
-   (quote
-    (tide csv-mode exec-path-from-shell lsp company-lsp ag restclient go-eldoc company-go go-mode yaml-mode browse-kill-ring rainbow-delimiters dired-single flx counsel ivy magit popwin ibuffer-vc company cider smartparens window-numbering moe-theme powerline)))
- '(safe-local-variable-values (quote ((cider-shadow-cljs-default-options . "app")))))
+   '(aggressive-indent tide csv-mode exec-path-from-shell ag restclient go-eldoc company-go go-mode yaml-mode browse-kill-ring rainbow-delimiters dired-single flx counsel ivy magit popwin ibuffer-vc company cider smartparens window-numbering moe-theme powerline))
+ '(safe-local-variable-values '((cider-shadow-cljs-default-options . "app")))
+ '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
